@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.credits {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.credits a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.credits a:hover {
+    text-decoration: underline;
+}
+
+.gameboy {
+    background-color: #8a8a8a;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gameboy-screen {
+    background-color: #9bbc0f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+canvas {
+    background-color: #0f380f;
+    border: 5px solid #333;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.gameboy-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.dpad {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.dpad-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.dpad-btn:active {
+    background-color: #555;
+}
+
+.up {
+    top: 0;
+    left: 40px;
+    border-radius: 5px 5px 0 0;
+}
+
+.right {
+    top: 40px;
+    right: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.down {
+    bottom: 0;
+    left: 40px;
+    border-radius: 0 0 5px 5px;
+}
+
+.left {
+    top: 40px;
+    left: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.action-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action-btn:active {
+    background-color: #aa0000;
+}
+
+.menu-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.menu-btn {
+    padding: 5px 15px;
+    background-color: #666;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menu-btn:active {
+    background-color: #444;
+}
+
+.controls {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.status-container {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#status {
+    margin-right: 10px;
+}
+
+#game-name {
+    color: #0066cc;
+}
+
+.error-container {
+    margin-bottom: 15px;
+}
+
+#error {
+    color: #cc0000;
+    padding: 10px;
+    background-color: #ffeeee;
+    border-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 8px 16px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0055aa;
+}
+
+.load-rom {
+    background-color: #33aa33;
+}
+
+.load-rom:hover {
+    background-color: #228822;
+}
+
+@media (max-width: 600px) {
+    .gameboy {
+        padding: 10px;
+    }
+    
+    .gameboy-screen {
+        padding: 10px;
+    }
+    
+    .dpad {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .dpad-btn {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .action-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+
