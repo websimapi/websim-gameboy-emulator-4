@@ -118,7 +118,8 @@
                 // Initialize the GameBoy
                 const canvas = document.getElementById('screen');
                 const gameboy = new GameboyJS.Gameboy(canvas, {
-                    zoom: 1
+                    zoom: 1,
+                    pad: {class: GameboyJS.Keyboard}
                 });
 
                 // Set up status display
